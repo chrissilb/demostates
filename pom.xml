@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>de.gwasch.code.parent</groupId>
+		<artifactId>parent</artifactId>
+		<version>0.0.2</version>
+	</parent>
+
+	<groupId>de.gwasch.code.demostates</groupId>
+	<artifactId>demostates</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<name>demostates</name>
+	<description>Simple demonstrator of the ESC state framework</description>
+	<url>http://gwasch.de</url>
+
+	<developers>
+		<developer>
+			<name>Christian Silberbauer</name>
+			<email>christian.silberbauer@gwasch.de</email>
+		</developer>
+	</developers>
+
+	<licenses>
+		<license>
+			<name>MIT License</name>
+			<url>http://www.opensource.org/licenses/mit-license.php</url>
+		</license>
+	</licenses>
+
+	<dependencies>
+		<dependency>
+			<groupId>de.gwasch.code.escframework</groupId>
+			<artifactId>escframework</artifactId>
+			<version>0.0.2</version>
+		</dependency>
+	</dependencies>
+</project>
