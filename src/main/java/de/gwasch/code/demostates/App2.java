@@ -1,8 +1,7 @@
 package de.gwasch.code.demostates;
 
 import de.gwasch.code.escframework.events.listeners.EventAdapter;
-import de.gwasch.code.escframework.states.aggregations.AggregateFunction;
-import de.gwasch.code.escframework.states.aggregations.DoubleAggregation;
+import de.gwasch.code.escframework.states.aggregations.AvgAggregation;
 import de.gwasch.code.escframework.states.events.TransitionEvent;
 import de.gwasch.code.escframework.states.states.AggregateState;
 import de.gwasch.code.escframework.states.states.DivideState;
@@ -27,7 +26,7 @@ public class App2 {
 
 		public Boss() {
 			staffPerformanceBase = new AggregateState<>(Double.class, "staff performance base",
-					new DoubleAggregation(AggregateFunction.Avg));
+					new AvgAggregation<Double>(Double.class));
 			SimpleState<Double> divisorState = new SimpleState<>(Double.class, "divisor", 10.0);
 			staffPerformance = new DivideState<>(Double.class, "staff performance", staffPerformanceBase, divisorState);
 			staffPerformance.registerTransitionListener(new EventHandler());
